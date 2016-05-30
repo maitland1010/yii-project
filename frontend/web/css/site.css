@@ -1,0 +1,203 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* common css */
+.multiple-dropdown{
+	border-left:3px solid #DEDEDF;
+	padding-left:5px;
+	cursor:pointer;
+	position:relative;
+}
+.multiple-dropdown label{
+	display:block;
+}
+.multiple-dropdown label:after{
+	content: ' ';
+	display: inline-block;
+	border: 5px solid transparent;
+	border-color:#A0A0A0 transparent transparent transparent;
+	margin:-2px 5px;
+}
+.multiple-dropdown ul{
+	list-style: none;
+	padding-left: 5px;
+	position: absolute;
+	background: #fff;
+	width: 100%;
+	left: -3px;
+	border-left: 3px solid #DEDEDF;
+	top: 100%;
+	visibility: collapse;
+	z-index: 1000;
+}
+.multiple-dropdown ul.collapse-dropdownlist{
+	visibility: visible;
+}
+.editable-dropdown .selection-list {
+	position:relative;
+}
+.editable-dropdown .selection-list .select-arrow{
+	display:block;
+	border: 5px solid transparent;
+	border-color:#A0A0A0 transparent transparent transparent;
+	position:absolute;
+	top: 10px;
+	right: 5px;
+}
+.editable-dropdown .selection-list{
+	width:175px;
+}
+.editable-dropdown .selection-list ul,.editable-dropdown .selection-list input{
+	width:100%;
+}
+.editable-dropdown .selection-list ul{
+	position:absolute;
+	max-height:100px;
+	overflow-y:auto;
+	top:100%;
+	border:1px solid #7f9db9;
+	border-top:none;
+	background:#fff;
+	padding-left:0;
+	z-index:1000;
+}
+.editable-dropdown .selection-list ul li{
+	padding-left:5px;
+}
+.editable-dropdown .selection-list ul li:hover{
+	background:rgb(49, 106, 197);
+	color:#fff;
+}
+.autocomplete-box{
+	position:relative;
+}
+.autocomplete-box label,.autocomplete-box .tag{
+	float:left;
+	margin-right:5px;
+}
+.autocomplete-box .tag input{
+	color:#F4FAF2;
+	padding: 2px 0 2px 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.autocomplete-box .tag span{
+	display: inline-block;
+	padding: 2px 5px;
+	cursor: pointer;
+	color:#F4FAF2;
+}
+.autocomplete-box ul{
+	position:absolute;
+	max-height:100px;
+	overflow-y:auto;
+	top:100%;
+	border:1px solid #7f9db9;
+	background:#fff;
+	padding-left:0;
+	width:100%;
+}
+.autocomplete-box ul li{
+	padding:5px;
+}
+.autocomplete-box ul li:hover{
+	background:rgb(49, 106, 197);
+	color:#fff;
+}
+.autocomplete-box input{
+	background:transparent;
+	border:none;
+}
+.autocomplete-box input:focus{
+	outline:0;
+}
+/* end common css */
